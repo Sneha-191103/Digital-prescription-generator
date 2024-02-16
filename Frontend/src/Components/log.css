@@ -1,0 +1,281 @@
+html,body{
+  margin:0;
+  padding:0;
+  width:100%;
+}
+.logform{
+  width:93%;
+  height:610px;
+  padding:50px 50px 50px 50px;
+    display: flex;
+   flex-direction: column;
+    font-family: Courier New, Courier, 'monospace';
+    background-image: url(docbg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+}
+
+
+
+
+.button {
+  background: linear-gradient(to bottom right, #ffffff, #f0f0f0);
+  border: 0;
+  border-radius: 10px;
+  color:rgb(15, 71, 242);
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 18px;
+  line-height: 2.3;
+  outline: transparent;
+  padding: 1px 20px;
+  text-align: center;
+ 
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.button:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(67, 134, 227, 0.5), .125rem .125rem 1rem rgba(90, 167, 255, 0.5);
+}
+
+.button:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(71, 166, 239, 0.5), .125rem .125rem 1rem rgba(90, 195, 255, 0.5);
+}
+.login-form{
+  font-size: 30px;
+}
+input {
+  padding: 8px 15px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+.med{
+  padding: 7px 15px;
+  width:50px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+.but {
+  display: flex;
+  height: 4em;
+  width: 50px;
+  align-items: center;
+  justify-content: center;
+ 
+ 
+  letter-spacing: 1px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  border: none;
+  background: #ffffff;
+ }
+ 
+ .but > svg {
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: 25px;
+  transition: all 0.4s ease-in;
+ }
+ 
+ .but:hover > svg {
+  font-size: 1.2em;
+  transform: translateX(-5px);
+ }
+ 
+ .but:hover {
+  box-shadow: 9px 9px 33px #d1d1d11a, -9px -9px 33px #ffffff14;
+  transform: translateY(-2px);
+ }
+ /* log.css */
+
+/* Style for the parent container */
+.items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #f0f0f0; /* Background color */
+}
+.pres{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(pres.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #f0f0f0;
+}
+/* Style for the action container */
+.act {
+  background-color: #ffffff; /* Background color */
+  border-radius: 5px;
+  padding: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for a card-like effect */
+}
+
+/* Style for the form container */
+.add-container {
+  margin-top: 20px;
+}
+
+/* Style for form elements */
+.add label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.add input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Style for the submit button */
+.dbutton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Style for the title */
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Style for Toast notifications */
+.react-toastify__toast {
+  background-color: #333; /* Toast background color */
+  color: #fff; /* Toast text color */
+}
+
+/* Additional styles as needed */
+/* list.css */
+
+/* Style for the parent container */
+.list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0; /* Background color */
+}
+
+/* Style for the list items */
+.list-item {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #ffffff; /* Background color */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* Style for links */
+.list-item a {
+  text-decoration: none;
+  color: #09c8fd; /* Link color */
+  font-weight: bold;
+}
+
+/* Additional styles as needed */
+/* CSS to create a tick button */
+.tick-button {
+  width: 30px; /* Adjust the width and height as needed */
+  height: 30px;
+  background-color: #4CAF50; /* Button background color */
+  border: none;
+  border-radius: 50%; /* Makes the button circular */
+  position: relative;
+  cursor: pointer;
+}
+
+.tick-button::before {
+  content: '\2713'; /* Unicode code point for checkmark symbol */
+  font-size: 17px; /* Adjust the size as needed */
+  color: white; /* Symbol color */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* qrcode.css */
+
+/* Styling for the entire Qrcode component */
+.Apple {
+  text-align: center;
+  background-color: #f0f0f0; /* Background color */
+  padding: 20px;
+  background-image: url(bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  flex-direction: column;
+
+  height: 100vh;
+  background-image: url(bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #f0f0f0; 
+}
+.end{
+  align-items:last baseline;
+}
+
+/* Styling for the QR Code container */
+.QRCode-container {
+  margin-top: 20px;
+}
+
+/* Styling for the Logout button */
+button {
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Button text color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3; /* Button background color on hover */
+}
+
+/* Styling for the heading */
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Styling for the generated QR Code */
+.QRCode {
+  margin-top: 20px;
+  max-width: 300px; /* Adjust the maximum width as needed */
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #fff; /* Background color of the QR Code container */
+}
